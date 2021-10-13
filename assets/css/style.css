@@ -1,0 +1,266 @@
+@font-face {
+    font-family: Open Sans Regular;
+    src: url(../../fonts/OpenSans-Regular.ttf)
+}
+
+@font-face {
+    font-family: Open Sans SemiBold;
+    src: url(../../fonts/OpenSans-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: Open Sans Bold;
+    src: url(../../fonts/OpenSans-Bold.ttf)
+}
+
+/* Sass Decoration to assign color values*/
+:root {
+    --black--: black;
+    --yellow--: #FFAD01;
+    --ash--: #f2f2f2;
+    --brown--:#887392;
+    --white--: #FFFFFF;
+    --blue--: #007bff;
+    --deepblue--: rgb(25, 50, 77);
+}
+
+/* Margin and Padding removal*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+html{
+    -webkit-tap-highlight-color: transparent;
+}
+* {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+*:hover {
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0 !important;
+}
+
+li {
+    list-style: none;
+}
+
+.hero-section{
+    height: 100vh;
+    padding-top: 260px;
+    display: block;
+    background-image: url(../images/hero-bg.png);
+    background-size: cover;
+    background-color: #f3f7f9;
+    background-position: right top;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .hero-section {
+        background-position: right 25% top;
+        height: 730px;
+        padding-top: 160px;
+    }
+}
+
+@media (min-width: 768px){
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 576px){
+    .container {
+        max-width: 540px;
+    }
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+label{
+     font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+@media (max-width: 768px){
+    label{
+ 
+    }
+}
+.hero-text h2 {
+    font-size: 70px;
+    margin-bottom: 35px;
+}
+.row h2{
+        color: #20509e;
+    margin: 0;
+    font-weight: 500;
+    font-family: "Futura", sans-serif;
+}
+.h2, h2 {
+    font-size: 2rem;
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+.hero-text h2 {
+    font-size: 45px;
+}
+}
+  .button-sub {
+    justify-content: center;
+    padding: 10px 25px;
+    background-color: rgba(255,255, 255, 0.2);
+    border: 2px solid #0063B2FF;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: black;
+    margin: auto;
+    margin-top: 40px;
+    font-family: "Open Sans Regular";
+    transition: all 0.5s ease-in-out;
+}
+.button-sub:hover {
+    background-color: #0063B2FF;
+    color: white;
+    border: 2px solid #0063B2FF;
+}
+.hero-text h4 {
+    color: #75849a;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+
+/* Footer Design*/
+footer {
+    background: #007bff;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .social-links {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 250px;
+}
+
+footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: white;
+    color: #0a2a66;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+footer .social-links a:hover {
+    background-color:  #0a2a66 ;
+    color: white;
+}
+footer .social-links i {
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    display: inline-block;
+    text-transform: none;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+}
+@media all and (max-width: 380px){
+    footer h1 {
+        font-size:10vw;
+    }
+}
+@media all and (max-width: 300px){
+    footer .social-links{
+        width: 100%;
+    }
+    
+}
+/* Preloader*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999099999999999999;
+    overflow: hidden;
+    background: #fff;
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #0563bb;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

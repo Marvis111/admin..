@@ -1,0 +1,385 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif , 'poppins', 'arial black';
+	background: #f2f2f2;
+}
+.side_nav{
+	width: 200px;
+	height: 100vh;
+	left: 0;
+	transition: .3s ease-in-out;
+	position: fixed;
+	z-index: 10000;
+	background:#204060;
+}
+.student_img{
+	width: 110px;
+	height: 120px;
+	border-radius: 100px;
+	margin: 10px auto;
+}
+.student_img img{
+	width: 100%;
+	border-radius: inherit;
+	height: 100%;
+}
+#navigations{
+	width: 100%;
+	height: auto;
+	padding-bottom: 30px;
+	margin-bottom: 20px;
+}
+#navigations li{
+	width: 100%;
+	font-weight: bold;
+	padding: 10px;
+	 font-size: 20px;
+	 transition: .2s ease-in-out;
+	 padding-left: 20px;
+	margin-bottom: 10px;
+}
+#navigations li a{
+	color: white;
+}
+#navigations li a i {
+	margin-right:10px;
+}
+#navigations li:hover{
+	background: rgb(25, 51, 77);
+	padding-left: 25px;
+}
+.nav_bar{
+	display: none;
+}
+
+.contents{
+	width:calc(100% - 200px);
+	float: right;
+	height: 100vh;
+}
+
+.school_des_images{
+	width:100%;
+	height: 300px;
+	position: relative;
+	float: right;
+	z-index: -1;
+}
+.school_des_images img{
+	width: 100%;
+	opacity: 1.0;
+	transition: .4s ease-in-out;
+	z-index:0;
+	height: 100%;
+}
+.prev{
+	padding: 10px;
+	color: white;
+	position:relative;
+	width: 10px;
+	font-weight: bolder;
+	font-size: 25px;
+	top:20% ;
+	left: 1%;
+	height: 10px;
+	cursor: pointer;
+}
+.next{
+	padding: 10px;
+	color: white;
+	position: relative;
+	left: 93%;
+	cursor: pointer;
+	width: 10px;
+	font-weight: bolder;
+<	font-size: 25px;
+	top:17%;
+	height: 10px;
+}
+.Dashboard_head{
+	background: white;
+	padding: 10px;
+	display:flex;
+	justify-content:space-between;
+	margin-top: 10px;
+	  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 90%;
+	 text-shadow: 2px 2px 4px #000000;
+	margin-left: 5%;
+}
+.search-div{
+	width:50%;
+	display:flex;
+}
+.searchBtn{
+	padding:5px 10px;
+	background:red;
+	border-radius: 0 5px 5px 0;
+	color:white;
+	height: 40px;
+	position: relative;
+	top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.sub-head{
+	background: white;
+	padding: 10px;
+	display:flex;
+	justify-content:space-around;
+	margin-top: 10px;
+	  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 90%;
+	 text-shadow: 2px 2px 4px #000000;
+	margin-left: 5%;
+	
+}
+.sub-head input{
+	width:50%;
+	height:inherit;
+	border-radius:5px 0 0 5px;
+}
+
+.addNewCourse{
+	height:40px;
+	padding:2px 10px;
+	background:green;
+	position: relative;
+	top: 10px;
+color:white;
+margin-top: 5px;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+float:right;
+}
+.addNewCourse a {
+	color:white;
+}
+
+.Dashboard_head i {
+	margin-top:5px;
+	margin-left:5px;
+}
+.content_container{
+
+	width: 98%;
+	height: auto;
+	margin-left: 1%;
+	padding-bottom: 20px;
+	margin-top: 5px;
+	justify-content: space-around;
+	text-align: center;
+}
+.school_panels{
+	width: 80%;
+	margin-top: 15px;
+	height: 150px;
+	 box-shadow: 0 20px 20px 0 grey, 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-right: 20px;
+	display: inline-flex;
+	margin-left:20px;
+	background: white;
+	border-radius: 5px;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.panel_icons{
+	width: inherit;
+	height: 50%;
+	padding-top: 5px;
+	display: flex;
+	margin-top: 10px;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.panel_icons h3{
+	font-size: 20px;
+	font-family: serif ;
+}
+.school_panels b{
+	font-size:50px;
+	color:#204060;
+	position: relative;
+}
+.items{
+	width: 100%;
+	display: flex;
+	text-align: center;
+	border-top: 1px solid black;
+	justify-content:space-between;
+	align-content: center;
+	height: 40%;
+
+}
+.items li:first-child{
+	font-size: 15px;
+}
+.items li{
+	width: 40px;
+	height: 20Px;
+	margin-top: 10px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-right: 3px;
+	border-radius: 10px;
+	text-align: center;color: white;
+	background:#2aa22a;
+}
+.page_info{
+	width: 60%;
+	margin-left: 20%;
+	height: 40px;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 20px;
+	padding-top: 10px;
+	text-align:center;
+	margin-bottom: 40px;
+	margin-top: 20px;
+	background: white;
+	  box-shadow:  0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+/* courses...  */
+.courseChoice{
+	width:100%;
+	height:auto;
+	justify-content:center;
+	text-align:center;
+	padding:20px;
+}
+.createCourse{
+	width:250px;
+	display:inline-flex;
+	height:300px;
+	cursor: pointer;
+	background:white;
+	margin:20px;
+	border-radius:10px;
+	box-shadow:  0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+	flex-direction:column;
+	text-align:center;
+	justify-content:center;
+	transition:.2s ease-in-out;
+}
+.createCourse:hover{
+	background:lightblue;
+	color:white;
+}
+.courseIcon{
+	font-size:40px;
+	color:grey;
+	margin-bottom:10px;
+}
+.createCourse h3{
+	font-size:30px;
+}
+
+.courseField, select{
+	height:40px;
+	width:40%;
+	border-radius:5px;
+	border:1px solid black;
+	margin-top:10px;
+}
+.submitCourse{
+	width:150px;
+	height:40px;
+	padding:5px 10px;
+	margin:20px auto;
+	background:black;
+	color:white;
+	display:flex;
+	flex-direction:column;
+	border-radius:5px;
+	text-align:center;
+	transition:.2s ease-in-out;
+	font-weight:bold;
+	border:1px solid lightblue;
+	justify-content:center;
+	cursor:pointer;
+}
+.submitCourse:hover{
+	box-shadow:  0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.success{
+	width:60%;
+	height:auto;
+	color:green;
+	display:flex;
+	box-shadow:  0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius:5px;
+	text-align:center;
+	padding:10px 5px;
+	margin:5px auto;
+	justify-content:space-between;
+}
+@media(max-width: 740px){
+	.success{
+		width:100%;
+	}
+.nav_bar{
+	display: block;
+	font-size: 30px;
+	cursor: pointer;
+	margin-top: 15px;
+	float: right;
+	transition: .4s ease-in-out;
+	margin-right: 20px;
+}
+
+
+.side_nav{
+	left: -200px;
+	transition: .2s ease-in-out;
+}
+
+.contents{
+	width:100%;
+	float: right;
+	height: 100vh;
+	margin-top: 20px;
+}
+
+.sub-head{
+	flex-direction:column;
+	justify-content:center;
+	text-align:center;
+}
+.search-div{
+	width:100%;
+	margin-bottom:10px;
+	padding:5px 
+}
+.search-div input{
+	width:calc(100% - 40px )
+}
+.addNewCourse{
+	width:120px;
+	height:40px;
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	margin:1px auto;
+}
+
+
+
+}
